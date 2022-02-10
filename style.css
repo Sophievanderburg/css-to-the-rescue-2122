@@ -1,0 +1,160 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    position: relative;
+}
+
+/*--------------- achtergrond -------------------*/
+main div:first-of-type{
+    background-color: #35314B;
+    width: 100vw;
+    height: 95vh;
+}
+
+main div:nth-of-type(2){
+    background-color: #5F7C5A;
+    width: 100vw;
+    height: 5vh;
+}
+
+
+/*--------------- vuurwerk 1 -------------------*/
+/* bron: https://www.youtube.com/watch?v=K4K7HNavK4U*/
+main > div:nth-of-type(3){
+    width: 20px;
+    height: 20px;
+    background-color: #FBC70F;
+    border-radius: 50%;
+    
+    position: absolute;
+    bottom: -100%;
+    left: 39.25vw;
+
+    animation-name: pijl1 ;
+    animation-duration:  2s;
+    animation-timing-function:  ease-in-out  ;
+    animation-iteration-count:  infinite;
+}
+
+@keyframes pijl1{
+    0%{
+        bottom: -100%;
+        left: 39.25vw;
+    }
+    100%{
+        bottom: 78.75vh;
+        left: 49.25vw;
+    }
+}
+
+main > div:nth-of-type(4){
+    position: relative;
+    position: absolute;
+    top: 20vh; left: 50vw; 
+    display: none;  
+
+    animation-name: vuurwerk1zichtbaar; 
+    animation-timing-function:  ease-in-out;
+}
+
+
+@keyframes vuurwerk1zichtbaar{
+    0%{
+        display: none;
+    }
+    100%{
+        display: block;
+    } 
+}
+
+
+/* div vuurwerk komt nog niet tevoorschijn*/
+
+
+
+main div:nth-of-type(4) > div {
+    position: absolute;
+    left: -2px;
+    bottom: 0;
+
+    width: 4px;
+    height: 80px;
+    background-color:#292733;
+
+    transform-origin: 50% 100%;
+    overflow: hidden;
+}
+
+main div:nth-of-type(4) > div:nth-child(1){
+    transform: rotate(0deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div:nth-child(2){
+    transform: rotate(30deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div:nth-child(3){
+    transform: rotate(60deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div:nth-child(4){
+    transform: rotate(90deg) translateY(-15px);   
+}
+
+main div:nth-of-type(4) > div:nth-child(5){
+    transform: rotate(120deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div:nth-child(6){
+    transform: rotate(150deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div:nth-child(7){
+    transform: rotate(180deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div:nth-child(8){
+    transform: rotate(210deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div:nth-child(9){
+    transform: rotate(240deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div:nth-child(10){
+    transform: rotate(270deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div:nth-child(11){
+    transform: rotate(300deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div:nth-child(12){
+    transform: rotate(330deg) translateY(-15px);
+}
+
+main div:nth-of-type(4) > div::before{
+    content: "";
+    position: absolute;
+    left: 0; 
+    top: 94%; 
+    right: 0;
+
+    height: 40px;
+    background-color: #FBC70F;
+
+    animation: vuurwerk1 2s ease-in-out infinite;
+}
+
+@keyframes vuurwerk1{
+    0%{
+        top: 100%;
+    }
+    33%, 100%{
+        top: -50%;
+    }
+}
