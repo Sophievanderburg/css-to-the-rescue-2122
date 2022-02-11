@@ -73,54 +73,56 @@ main div:nth-of-type(2) > div {
 
     transform-origin: 50% 100%;
     overflow: hidden;
+
+    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
 }
 
 main div:nth-of-type(2) > div:nth-child(1){
-    transform: rotate(0deg) translateY(-15px);
+    --index:0;
 }
 
 main div:nth-of-type(2) > div:nth-child(2){
-    transform: rotate(30deg) translateY(-15px);
+    --index:1;
 }
 
 main div:nth-of-type(2) > div:nth-child(3){
-    transform: rotate(60deg) translateY(-15px);
+    --index:2;
 }
 
 main div:nth-of-type(2) > div:nth-child(4){
-    transform: rotate(90deg) translateY(-15px);   
+    --index:3;  
 }
 
 main div:nth-of-type(2) > div:nth-child(5){
-    transform: rotate(120deg) translateY(-15px);
+    --index:4;
 }
 
 main div:nth-of-type(2) > div:nth-child(6){
-    transform: rotate(150deg) translateY(-15px);
+    --index:5;
 }
 
 main div:nth-of-type(2) > div:nth-child(7){
-    transform: rotate(180deg) translateY(-15px);
+    --index:6;
 }
 
 main div:nth-of-type(2) > div:nth-child(8){
-    transform: rotate(210deg) translateY(-15px);
+    --index:7;
 }
 
 main div:nth-of-type(2) > div:nth-child(9){
-    transform: rotate(240deg) translateY(-15px);
+    --index:8;
 }
 
 main div:nth-of-type(2) > div:nth-child(10){
-    transform: rotate(270deg) translateY(-15px);
+    --index:9;
 }
 
 main div:nth-of-type(2) > div:nth-child(11){
-    transform: rotate(300deg) translateY(-15px);
+    --index:10;
 }
 
 main div:nth-of-type(2) > div:nth-child(12){
-    transform: rotate(330deg) translateY(-15px);
+    --index:11;
 }
 
 main div:nth-of-type(2) > div::before{
@@ -195,54 +197,56 @@ main div:nth-of-type(4) > div {
 
     transform-origin: 50% 100%;
     overflow: hidden;
+
+    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
 }
 
 main div:nth-of-type(4) > div:nth-child(1){
-    transform: rotate(0deg) translateY(-15px);
+    --index: 0;
 }
 
 main div:nth-of-type(4) > div:nth-child(2){
-    transform: rotate(30deg) translateY(-15px);
+    --index: 1;
 }
 
 main div:nth-of-type(4) > div:nth-child(3){
-    transform: rotate(60deg) translateY(-15px);
+    --index: 2;
 }
 
 main div:nth-of-type(4) > div:nth-child(4){
-    transform: rotate(90deg) translateY(-15px);   
+    --index: 3;  
 }
 
 main div:nth-of-type(4) > div:nth-child(5){
-    transform: rotate(120deg) translateY(-15px);
+    --index: 4;
 }
 
 main div:nth-of-type(4) > div:nth-child(6){
-    transform: rotate(150deg) translateY(-15px);
+    --index: 5;
 }
 
 main div:nth-of-type(4) > div:nth-child(7){
-    transform: rotate(180deg) translateY(-15px);
+    --index: 6;
 }
 
 main div:nth-of-type(4) > div:nth-child(8){
-    transform: rotate(210deg) translateY(-15px);
+    --index: 7;
 }
 
 main div:nth-of-type(4) > div:nth-child(9){
-    transform: rotate(240deg) translateY(-15px);
+    --index: 8;
 }
 
 main div:nth-of-type(4) > div:nth-child(10){
-    transform: rotate(270deg) translateY(-15px);
+    --index: 9;
 }
 
 main div:nth-of-type(4) > div:nth-child(11){
-    transform: rotate(300deg) translateY(-15px);
+    --index: 10;
 }
 
 main div:nth-of-type(4) > div:nth-child(12){
-    transform: rotate(330deg) translateY(-15px);
+    --index: 11;
 }
 
 main div:nth-of-type(4) > div::before{
@@ -268,5 +272,173 @@ main div:nth-of-type(4) > div::before{
     }
     33%, 100%{
         top: -100%;
+    }
+}
+
+/*----------------------------------------- vuurwerk 3 --------------------------------------------------*/
+/* bron: https://www.youtube.com/watch?v=K4K7HNavK4U*/
+main > div:nth-of-type(5){
+    width: 20px;
+    height: 20px;
+    background-color: #1cf476;
+    border-radius: 50%;
+    
+    position: absolute;
+    bottom: -100%;
+    right: 4vw;
+
+    /* animation-name: pijl3; */
+    animation-duration:  2s;
+    animation-timing-function:  ease-in-out  ;
+    animation-iteration-count:  infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes pijl3{
+    0%{
+        bottom: -100%;
+        right: 4vw;
+    }
+    100%{
+        bottom: 48.8vh;
+        right: 19.3vw;
+    }
+}
+
+main > div:nth-of-type(6){
+    position: relative;
+    position: absolute;
+    top: 30vh; left: 20vw; 
+}
+
+main div:nth-of-type(6) > div {
+    position: absolute;
+    left: -2px;
+    bottom: 0;
+
+    width: 4px;
+    height: 50px;
+    background-color: transparent;
+
+    transform-origin: 50% 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+main div:nth-of-type(6) > div:nth-child(2n){
+    height: 70px;
+}
+
+main div:nth-of-type(6) > div:nth-child(1){
+    transform: rotate(0deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div:nth-child(2){
+    transform: rotate(30deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div:nth-child(3){
+    transform: rotate(60deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div:nth-child(4){
+    transform: rotate(90deg) translateY(-15px);   
+}
+
+main div:nth-of-type(6) > div:nth-child(5){
+    transform: rotate(120deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div:nth-child(6){
+    transform: rotate(150deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div:nth-child(7){
+    transform: rotate(180deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div:nth-child(8){
+    transform: rotate(210deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div:nth-child(9){
+    transform: rotate(240deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div:nth-child(10){
+    transform: rotate(270deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div:nth-child(11){
+    transform: rotate(300deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div:nth-child(12){
+    transform: rotate(330deg) translateY(-15px);
+}
+
+main div:nth-of-type(6) > div::before{
+    content: "";
+    position: absolute;
+    left: 0; 
+    top: -100%; 
+    right: 0;
+
+    height: 20px;
+    background-color: #1cf476;
+
+    animation-name: vuurwerk3;
+    animation-duration:  3s;
+    animation-timing-function:  ease-in-out;
+    animation-iteration-count:  infinite;
+    animation-delay: 1s;
+}
+
+main div:nth-of-type(6) > div:nth-child(2n)::before{
+    background-color: #f4f41c;
+    height: 100%;
+}
+
+@keyframes vuurwerk3{
+    0%{
+        top: 125%;
+    }
+    33%, 100%{
+        top: -100%;
+    }
+}
+
+
+/*----------------------------------------- vuurwerk 4 ster --------------------------------------------------*/
+main > div:nth-of-type(7){
+}
+
+
+main > div:nth-of-type(8){
+    position: absolute;
+    top: 2em; left: 2em;
+
+    background-color: teal;
+    width: 40px;
+    height: 40px;
+}
+
+/* span gaat niet over hele breedte */
+main > div:nth-of-type(8) span{
+    width: 100%; height: 100%;
+    font-size: 100px;
+    color: yellow;
+    transform: scale(200%);
+}
+
+@keyframes sterretje{
+    0%{
+        opacity: 0%;
+    },
+    75%{
+        
+    }
+    100%{
+        opacity: 0%;
     }
 }
