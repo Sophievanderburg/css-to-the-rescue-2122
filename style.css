@@ -434,6 +434,7 @@ main > div:nth-of-type(8) span{
 @keyframes sterretje{
     0%{
         opacity: 0%;
+        transform: scale();
     }
     75%{
         
