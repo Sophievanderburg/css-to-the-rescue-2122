@@ -4,19 +4,130 @@
 }
 
 main{
+    width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 /*----------------------------------------- achtergrond --------------------------------------------------*/
-main section div:first-of-type{
+main section{
+    position: relative;
+}
+
+main section > div:first-of-type{
     background-color: #35314B;
     width: 100vw;
     height: 95vh;
 }
 
-main section div:nth-of-type(2){
+main section > div:nth-of-type(2){
     background-color: #5F7C5A;
     width: 100vw;
     height: 5vh;
 }
+
+/* maan van: https://medium.com/@ansariabdullahar/how-to-make-a-crescent-moon-using-css-box-shadow-property-463f118c4d83 */
+main section > div:nth-of-type(3){
+    position: absolute;
+    top: 5vh; right: 5vh; bottom: 0; left: 0;
+    width: 20vw;
+	height: 20vw;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 4vw 2vw 0px 0px white; 
+}
+
+
+/* -------------- bomen --------------*/
+main section ul{
+    position: absolute;
+    bottom: 3vh;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+main section ul li{
+    position: relative;
+    width: 60px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
+main section ul li:nth-of-type(2n){
+    height: 85%;
+}
+
+/* boom-top */
+main section ul li div:first-of-type{
+    width: 50%;
+    height: 30%;
+    background-color: #536c4f;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 6%; left: 0;
+    z-index: 2;
+}
+
+main section ul li div:nth-of-type(2){
+    width: 50%;
+    height: 30%;
+    background-color: #536c4f;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 4%; left: 45%;
+    z-index: 2;
+}
+
+main section ul li div:nth-of-type(3){
+    width: 50%;
+    height: 30%;
+    background-color: #536c4f;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0; left: 17%;
+    z-index: 2;
+}
+
+main section ul li div:nth-of-type(4){
+    width: 50%;
+    height: 30%;
+    background-color: #536c4f;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 20%; left: 8%;
+    z-index: 2;
+}
+
+main section ul li div:nth-of-type(5){
+    width: 50%;
+    height: 30%;
+    background-color: #536c4f;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 20%; left: 40%;
+    z-index: 2;
+}
+
+/* boom-stam */
+main section ul li div:last-of-type{
+    width: 10px;
+    height: 70%;
+    background-color: rgb(109, 89, 65);
+
+    position: absolute;
+    bottom: 0; left: 40%;
+}
+
