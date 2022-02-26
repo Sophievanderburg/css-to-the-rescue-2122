@@ -11,36 +11,38 @@ main{
 }
 
 /*----------------------------------------- achtergrond --------------------------------------------------*/
-main section{
+main section:first-of-type{
     position: relative;
 }
 
-main section > div:first-of-type{
+main section:first-of-type > div:first-of-type{
     background-color: #35314B;
     width: 100vw;
     height: 95vh;
 }
 
-main section > div:nth-of-type(2){
+main section:first-of-type > div:nth-of-type(2){
     background-color: #5F7C5A;
     width: 100vw;
     height: 5vh;
 }
 
 /* maan van: https://medium.com/@ansariabdullahar/how-to-make-a-crescent-moon-using-css-box-shadow-property-463f118c4d83 */
-main section > div:nth-of-type(3){
+main section:first-of-type > div:nth-of-type(3){
     position: absolute;
-    top: 5vh; right: 5vh; bottom: 0; left: 0;
+    top: 5vmin;  bottom: 0; right: 10vmax;
     width: 20vmin;
-	height: 20vmin;
+    min-width: 100px;
+    height: 20vmin;
+    min-height: 100px;
 	background-color: transparent;
 	border-radius: 50%;
-	box-shadow: 4vw 2vw 0px 0px white; 
+	box-shadow: 25px 15px 0px 0px white; 
 }
 
 
 /* -------------- bomen --------------*/
-main section ul{
+main > section:first-of-type ul{
     position: absolute;
     bottom: 3vh;
     width: 100vmax;
@@ -52,7 +54,7 @@ main section ul{
     align-items: flex-end;
 }
 
-main section ul li{
+main > section:first-of-type ul li{
     position: relative;
     width: 13vmin;
     min-width: 55px;
@@ -63,12 +65,12 @@ main section ul li{
     list-style-type: none;
 }
 
-main section ul li:nth-of-type(2n){
+main > section:first-of-type ul li:nth-of-type(2n){
     height: 85%;
 }
 
 /* boom-top */
-main section ul li div:first-of-type{
+main > section:first-of-type ul li div:first-of-type{
     width: 50%;
     height: 30%;
     background-color: #536c4f;
@@ -79,7 +81,7 @@ main section ul li div:first-of-type{
     z-index: 2;
 }
 
-main section ul li div:nth-of-type(2){
+main > section:first-of-type ul li div:nth-of-type(2){
     width: 50%;
     height: 30%;
     background-color: #536c4f;
@@ -90,7 +92,7 @@ main section ul li div:nth-of-type(2){
     z-index: 2;
 }
 
-main section ul li div:nth-of-type(3){
+main > section:first-of-type ul li div:nth-of-type(3){
     width: 50%;
     height: 30%;
     background-color: #536c4f;
@@ -101,7 +103,7 @@ main section ul li div:nth-of-type(3){
     z-index: 2;
 }
 
-main section ul li div:nth-of-type(4){
+main > section:first-of-type ul li div:nth-of-type(4){
     width: 50%;
     height: 30%;
     background-color: #536c4f;
@@ -112,7 +114,7 @@ main section ul li div:nth-of-type(4){
     z-index: 2;
 }
 
-main section ul li div:nth-of-type(5){
+main > section:first-of-type ul li div:nth-of-type(5){
     width: 50%;
     height: 30%;
     background-color: #536c4f;
@@ -124,7 +126,7 @@ main section ul li div:nth-of-type(5){
 }
 
 /* boom-stam */
-main section ul li div:last-of-type{
+main > section:first-of-type ul li div:last-of-type{
     width: 10px;
     height: 70%;
     background-color: rgb(109, 89, 65);
@@ -133,27 +135,136 @@ main section ul li div:last-of-type{
     bottom: 0; left: 40%;
 }
 
+/*--------------------------------------------- Vuurwerk ------------------------------------------------------*/
+/*------------------------------- Vuurwerk 1 -----------------------------------------*/
 
+main > section:nth-of-type(2){
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2){
+    position:absolute;
+    top: 20vmin;
+    left: 40vmin;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div{
+    position: absolute;
+    left: 2em;
+    bottom: 0;
+
+    width: 4px;
+    height: 40px;
+    background-color: transparent;
+
+    transform-origin: 50% 100%;
+    overflow: hidden;
+    border-radius: 50%;
+
+    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(2n){
+    height: 70px;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(1){
+    --index:0;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(2){
+    --index:1;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(3){
+    --index:2;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(4){
+    --index:3;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(5){
+    --index:4;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(6){
+    --index:5;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(7){
+    --index:6;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(8){
+    --index:7;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(9){
+    --index:8;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(10){
+    --index:9;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(11){
+    --index:10;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(12){
+    --index:11;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div::before{
+    content: "";
+    position: absolute;
+    left: 0; 
+    top: 100%; 
+    right: 0;
+
+    height: 100%;
+    background-color: #1cf476;
+
+    animation: vuurwerk1 2s ease-in-out infinite;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(2n)::before{
+    Background-color:#ffff00;  
+}
+
+@keyframes vuurwerk1{
+    0%{
+        top: 100%;
+    }
+    33%, 100%{
+        top: -100%;
+    }
+}
 
 /*--------------------------------------------- Form ------------------------------------------------------*/
 main > form{
     position: absolute;
-    bottom: 0; left: 0;
+    bottom: 1vmin; left: 1vmin;
     
-    padding: 1em;
+    padding: 0.5em;
     width: 25vmin;
-    height: 70vmin;
+    height: 98vmin;
     background-color: white;
     z-index: 3;
+    border-radius: 5px;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    background-color: white;
+    opacity: 0.8;
 }
 
 main > form div{
-    border: 1px solid blue;
+    margin: 0.25em;
     width: 100%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -162,4 +273,10 @@ main > form div{
 
 main > form div input[type='checkbox']{
     order: 1;
+}
+
+main > form input[type='submit']{
+    border: none;
+    height: 40px;
+    padding: 0.5em 1em;
 }
