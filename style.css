@@ -136,8 +136,16 @@ main > section:first-of-type ul li div:last-of-type{
 }
 
 /*--------------------------------------------- Vuurwerk ------------------------------------------------------*/
-/*------------------------------- Vuurwerk 1 -----------------------------------------*/
+main > input[type="checkbox"]{
+    display: none;
+}
 
+/*------------------------------- Vuurwerk aanzetten -----------------------------------------*/
+input[type="checkbox"]:nth-of-type(2):checked ~ section:nth-of-type(2) > div:nth-of-type(2){
+    display: block;
+}
+
+/*------------------------------- Vuurwerk 1 -----------------------------------------*/
 main > section:nth-of-type(2){
     position: absolute;
     top: 0; left: 0;
@@ -146,9 +154,13 @@ main > section:nth-of-type(2){
 }
 
 main > section:nth-of-type(2) > div:nth-of-type(2){
+    display: none;
     position:absolute;
-    top: 20vmin;
-    left: 40vmin;
+    top: 10vmin;
+    left: 20vmin;
+    width: 170px; height: 170px;
+    
+    animation: beweeg1 8s infinite;
 }
 
 main > section:nth-of-type(2) > div:nth-of-type(2) div{
@@ -245,10 +257,53 @@ main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(2n)::before{
     }
 }
 
+@keyframes beweeg1{
+    0%{
+        top: 10vmin;
+        left: 20vmin;
+    }
+    24%{
+        top: 10vmin;
+        left: 20vmin;
+    }
+    
+    25%{
+        top: 2vmin;
+        left: 80vmin;
+    }
+    49%{
+        top: 2vmin;
+        left: 80vmin;
+    }
+    
+    50%{
+        top: 20vmin;
+        left: 150vmin;
+    }
+    74%{
+        top: 20vmin;
+        left: 150vmin;
+    }
+    
+    75%{
+        top: 30vmin;
+        left: 90vmin;
+    }
+    99%{
+        top: 30vmin;
+        left: 90vmin;
+    }
+    
+    100%{
+        top: 10vmin;
+        left: 20vmin;
+    }
+  }
+
 /*--------------------------------------------- Form ------------------------------------------------------*/
 main > form{
     position: absolute;
-    bottom: 1vmin; left: 1vmin;
+    bottom: 1vmin; left: -25vmin;
     
     padding: 0.5em;
     width: 25vmin;
@@ -262,36 +317,45 @@ main > form{
     transition: 0.5s;
 }
 
-main > input[type="checkbox"]{
+/* main > input[type="checkbox"]{
     display: none;
+} */
+
+main input[type="checkbox"]:first-of-type:checked ~ form:first-of-type{
+    left: 1vmin;
 }
 
-main > input[type="checkbox"]:checked + form{
-    left: -25vmin;
+input[type="checkbox"]:nth-of-type(2):checked ~ form div label:first-of-type{
+    color:blue
 }
 
-main > form > label{
+main > form > label{    
+    font-family: avenir;
     width: 190px;
     text-align: center;
     padding: 0.75em 0;
     position: absolute;
     right: -190px;
     top: 2vmin;
-    background-color: blue;
+    color: white;
+    background-color: #5e5982;
+    border-radius: 0 25px 25px 0;
 }
 
 main > form div{
     margin: 0.25em;
     width: 100%;
-    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid #5e5982;
 }
 
-main > form div input[type='checkbox']{
-    order: 1;
+main > form div label{
+    width: 100%;
+    text-align: center;
+    border: 2px solid #5e5982;
 }
 
 main > form input[type='submit']{
