@@ -519,6 +519,7 @@ main > section:nth-of-type(2) > div:nth-of-type(2) div::before{
     background-color: #1cf476;
 
     animation: vuurwerk1 2s ease-in-out infinite;
+    animation-delay: 2s;
 }
 
 main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(2n)::before{
