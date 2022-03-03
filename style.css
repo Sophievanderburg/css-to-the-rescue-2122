@@ -1,7 +1,13 @@
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
+    font-family: avenir;
 }
+
+:root {
+    --lucht: #35314B;
+    --grond: #5F7C5A; 
+  }
 
 main{
     width: 100vw;
@@ -16,7 +22,7 @@ main section:first-of-type{
 }
 
 main section:first-of-type > div:first-of-type{
-    background-color: #35314B;
+    background-color: var(--lucht);
     width: 100vw;
     height: 95vh;
 }
@@ -61,7 +67,7 @@ main section:first-of-type > div:nth-of-type(2):hover div:first-of-type{
     border-radius: 0 5vmin 0 0;
     transform: rotate(-25deg);
     box-shadow: 3px -3px 0 white;
-    background-color: #35314B;
+    background-color: var(--lucht);
    
     animation: hengel 9s linear;
     animation-fill-mode: forwards;
@@ -107,7 +113,7 @@ main section:first-of-type > div:nth-of-type(2):hover + div + div div{
     position: absolute;
     bottom: -2em;
     
-    left: 47%;
+    left: 48%;
     height: 3em; width: 1em;
     background-color: rgb(255, 77, 0);
     clip-path: polygon(52% 0%, 25% 13%, 7% 27%, 2% 46%, 9% 58%, 21% 69%, 35% 80%, 3% 100%, 100% 100%, 69% 80%, 82% 71%, 94% 60%, 99% 46%, 93% 26%, 77% 13%);
@@ -173,7 +179,7 @@ main section:first-of-type > div:nth-of-type(2):hover + div + div div{
     0%{
         opacity: 0;
         bottom: -2em;
-        left: 47%;
+        left: 48%;
     }
     20%{
         opacity: 1;
@@ -181,12 +187,12 @@ main section:first-of-type > div:nth-of-type(2):hover + div + div div{
     70%{
         bottom: 77vh;
         opacity: 1;
-        left: 47%; 
+        left: 48%; 
     }
     95%{
         bottom: 77vh;
         opacity: 1;
-        left: 47%; 
+        left: 48%; 
     }
     100%{
         left: 50%;
@@ -313,12 +319,28 @@ main input[type="checkbox"]:nth-of-type(3):checked ~ form div:nth-of-type(2) lab
     border: 2px solid #5e5982;
 }
 
-/*------------------------------- Vuurwerk 1 -----------------------------------------*/
+/* vuurwerk 3 */
+main input[type="checkbox"]:nth-of-type(4):checked ~ section:nth-of-type(2) > div:nth-of-type(5){
+    display: block;
+}
+
+main input[type="checkbox"]:nth-of-type(4):checked ~ form div:nth-of-type(3) label{
+    border: 2px solid #5e5982;
+}
+
+/*------------------------------- Vuurwerk pijlen -----------------------------------------*/
+/*------------------------ Pijl 1 ---------------------------*/
+
+
+
+/*------------------------------- Vuurwerk explosies -----------------------------------------*/
+/*------------------------ Explosie 1 ---------------------------*/
 main > section:nth-of-type(2){
     position: absolute;
     top: 0; left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 2;
 }
 
 main > section:nth-of-type(2) > div:nth-of-type(2){
@@ -468,7 +490,7 @@ main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(2n)::before{
     }
   }
 
-/*------------------------------- Vuurwerk 2 -----------------------------------------*/
+/*------------------------ Explosie 2 ---------------------------*/
 main > section:nth-of-type(2){
     position: absolute;
     top: 0; left: 0;
@@ -623,6 +645,63 @@ main > section:nth-of-type(2) > div:nth-of-type(4) div:nth-child(2n)::before{
     }
   }  
 
+/*------------------------ Explosie 3 ---------------------------*/
+main > section:nth-of-type(2) > div:nth-of-type(5){
+    display: none;
+    position: absolute;
+    top: 100vh; left: -20vw;
+
+    width: 150px;
+    height: 50px;
+    overflow:hidden;
+
+    transform: rotate(-45deg);
+    animation: wavymove 7s linear infinite;
+}
+
+main > section:nth-of-type(2) > div:nth-of-type(5)::before{
+    content: "-----------";
+    color: transparent;
+    white-space: nowrap;
+    text-decoration-style: wavy;
+    text-decoration-color: yellow;
+    text-decoration-line: underline;
+  
+    position: absolute;
+    top: -42px;
+    left: 0;
+    font-size: 4em;
+    animation: wavy 0.2s linear infinite;
+  }
+
+@keyframes wavy {
+    0% {
+      transform: translateX(-1px);
+    }
+    100% {
+      transform: translateX(-33px);
+    }
+}
+
+@keyframes wavymove{
+    0%{
+        top: 100vh; left: -20vw;
+        transform: rotate(-45deg);
+    }
+    49%{
+        top: 20vh; left: 100vw;
+        transform: rotate(5deg);
+    }
+    50%{
+        top: 100vh; left: 100vw;
+        transform: rotate(-135deg);
+    }
+    100%{
+        top: 20vh; left: -20vw;
+        transform: rotate(-180deg);
+    }
+}
+
 /*--------------------------------------------- Form ------------------------------------------------------*/
 main > form{
     position: absolute;
@@ -645,7 +724,6 @@ main input[type="checkbox"]:first-of-type:checked ~ form:first-of-type{
 }
 
 main > form > label{    
-    font-family: avenir;
     width: 190px;
     text-align: center;
     padding: 0.75em 0;
