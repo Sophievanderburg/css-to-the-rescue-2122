@@ -352,7 +352,7 @@ main > section:nth-of-type(2) > div:nth-of-type(1){
     width: 10px; height: 40px;
     clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
 
-    background-color: red;
+    background:linear-gradient(red, coral);
     animation: pijl1 8s infinite;
 }
 
@@ -366,7 +366,8 @@ main > section:nth-of-type(2) > div:nth-of-type(1){
         opacity: 1;
     }
     24%{
-        top: 25vh; left: 10vw;
+        top: 25vh;
+        left: 22vw;
         transform: rotate(-45deg);
         opacity: 0;
 
@@ -383,13 +384,13 @@ main > section:nth-of-type(2) > div:nth-of-type(1){
         opacity: 1;
     }
     49%{
-        top: 20vh; left: 42vw;
-        transform: rotate(-30deg);
+        top: 17vh; left: 62vw;
+        transform: rotate(10deg);
         opacity: 0;
     }
     50%{
         top: 100vh; left: 50vw;
-        transform: rotate(10deg);
+        transform: rotate(20deg);
         opacity: 0;
     }
     51%{
@@ -399,8 +400,8 @@ main > section:nth-of-type(2) > div:nth-of-type(1){
         opacity: 1;
     }
     74%{
-        top: 40vh; left: 75vw;
-        transform: rotate(30deg);
+        top: 40vh; left: 87vw;
+        transform: rotate(40deg);
         opacity: 0;
     }
     75%{
@@ -415,7 +416,7 @@ main > section:nth-of-type(2) > div:nth-of-type(1){
         opacity: 1;
     }
     99%{
-        top: 45vh; left: 45vw;
+        top: 47vh; left: 42vw;
         transform: rotate(-10deg);
         opacity: 0;
     }
@@ -432,8 +433,8 @@ main > section:nth-of-type(2) > div:nth-of-type(1){
 main > section:nth-of-type(2) > div:nth-of-type(2){
     display: none;
     position:absolute;
-    top: 10vmin;
-    left: 20vmin;
+    top: 10vh;
+    left: 20vw;
     width: 170px; height: 170px;
     
     animation: beweeg1 8s infinite;
@@ -537,44 +538,44 @@ main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(2n)::before{
 
 @keyframes beweeg1{
     0%{
-        top: 10vmin;
-        left: 20vmin;
+        top: 10vh;
+        left: 20vw;
     }
     24%{
-        top: 10vmin;
-        left: 20vmin;
+        top: 10vh;
+        left: 20vw;
     }
     
     25%{
-        top: 2vmin;
-        left: 80vmin;
+        top: 2vh;
+        left: 60vw;
     }
     49%{
-        top: 2vmin;
-        left: 80vmin;
+        top: 2vh;
+        left: 60vw;
     }
     
     50%{
-        top: 20vmin;
-        left: 150vmin;
+        top: 20vh;
+        left: 85vw;
     }
     74%{
-        top: 20vmin;
-        left: 150vmin;
+        top: 20vh;
+        left: 85vw;
     }
     
     75%{
-        top: 30vmin;
-        left: 90vmin;
+        top: 30vh;
+        left: 40vw;
     }
     99%{
-        top: 30vmin;
-        left: 90vmin;
+        top: 30vh;
+        left: 40vw;
     }
     
     100%{
-        top: 10vmin;
-        left: 20vmin;
+        top: 10vh;
+        left: 20vw;
     }
   }
 
