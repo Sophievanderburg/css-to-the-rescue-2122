@@ -779,7 +779,7 @@ main > section:nth-of-type(2) > div:nth-of-type(5)::before{
     }
     49%{
         top: 20vh; left: 100vw;
-        transform: rotate(5deg);
+        transform: rotate(-20deg);
     }
     50%{
         top: 100vh; left: 100vw;
@@ -787,7 +787,7 @@ main > section:nth-of-type(2) > div:nth-of-type(5)::before{
     }
     100%{
         top: 20vh; left: -20vw;
-        transform: rotate(-180deg);
+        transform: rotate(-160deg);
     }
 }
 
