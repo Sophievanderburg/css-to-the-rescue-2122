@@ -7,6 +7,10 @@
 :root {
     --lucht: #35314B;
     --grond: #5F7C5A; 
+
+    --geel: #ffff00;
+    --groen:#1cf476;
+    --roze: #ff00d9;
   }
 
 main{
@@ -331,7 +335,7 @@ main > section:nth-of-type(2) > div:nth-of-type(1){
     width: 10px; height: 40px;
     clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
 
-    background:linear-gradient(#1cf476, #ffff00);
+    background:linear-gradient(var(--groen), var(--geel));
     animation: pijl1 8s infinite;
 }
 
@@ -417,7 +421,7 @@ main > section:nth-of-type(2) > div:nth-of-type(3){
     width: 10px; height: 40px;
     clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
 
-    background:linear-gradient(#1cf476, #ff00d9);
+    background:linear-gradient(var(--groen), var(--roze));
     animation: pijl2 8s infinite;
 }
 
@@ -584,14 +588,14 @@ main > section:nth-of-type(2) > div:nth-of-type(2) div::before{
     right: 0;
 
     height: 100%;
-    background-color: #1cf476;
+    background-color:var(--groen);
 
     animation: vuurwerk1 2s ease-in-out infinite;
     animation-delay: 2s;
 }
 
 main > section:nth-of-type(2) > div:nth-of-type(2) div:nth-child(2n)::before{
-    Background-color:#ffff00;  
+    Background-color:var(--geel);  
 }
 
 @keyframes vuurwerk1{
@@ -741,14 +745,14 @@ main > section:nth-of-type(2) > div:nth-of-type(4) div::before{
     right: 0;
 
     height: 100%;
-    background-color: #1cf476;
+    background-color: var(--groen);
 
     animation: vuurwerk2 2s ease-in-out infinite;
     animation-delay: 2s;
 }
 
 main > section:nth-of-type(2) > div:nth-of-type(4) div:nth-child(2n)::before{
-    Background-color:#ff00d9;  
+    Background-color:var(--roze);  
 }
 
 @keyframes vuurwerk2{
@@ -865,7 +869,7 @@ main > form{
     position: absolute;
     bottom: 1vmin; left: -25vmin;
     
-    padding: 0.5em;
+    padding: 1em;
     width: 25vmin;
     height: 98vmin;
     background-color: white;
@@ -873,7 +877,6 @@ main > form{
     border-radius: 5px;
 
     background-color: white;
-    opacity: 0.8;
     transition: 0.5s;
 }
 
@@ -893,13 +896,222 @@ main > form > label:first-of-type{
     border-radius: 0 25px 25px 0;
 }
 
-main > form > label{
+main > form > label:nth-of-type(n + 2){
     width: 100%;
     height: 20%;
     margin-bottom: 1em;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    border: 1px solid #5e5982;
+
+    background-color: white;
+    opacity: 1;
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 15px;
+}
+
+main > form > label > div{
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+/* ------------------ label vuurwerk 1 ------------------------- */
+main input[type="checkbox"]:nth-of-type(2):checked ~ form > label:nth-of-type(2){
+    box-shadow: inset 0 0 10px lightgray;
+}
+
+main > form > label:nth-of-type(2) div div{
+    position: absolute;
+    left: 55px;
+    bottom: 55px;
+
+    width: 4px;
+    height: 20px;
+    background-color: transparent;
+
+    transform-origin: 50% 100%;
+    overflow: hidden;
+    border-radius: 50%;
+
+    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(2n){
+    height: 40px;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(1){
+    --index:0;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(2){
+    --index:1;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(3){
+    --index:2;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(4){
+    --index:3;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(5){
+    --index:4;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(6){
+    --index:5;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(7){
+    --index:6;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(8){
+    --index:7;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(9){
+    --index:8;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(10){
+    --index:9;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(11){
+    --index:10;
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(12){
+    --index:11;
+}
+
+main > form > label:nth-of-type(2) div div::before{
+    content: "";
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    right: 0;
+
+    height: 100%;
+    background-color:var(--geel);
+}
+
+main > form > label:nth-of-type(2) div div:nth-child(2n)::before{
+    background-color: var(--groen);
+}
+
+/* ------------------ label vuurwerk 2 ------------------------- */
+main input[type="checkbox"]:nth-of-type(3):checked ~ form > label:nth-of-type(3){
+    box-shadow: inset 0 0 10px lightgray;
+}
+
+main > form > label:nth-of-type(3) div div{
+    position: absolute;
+    left: 55px;
+    bottom: 55px;
+
+    width: 4px;
+    height: 20px;
+    background-color: transparent;
+
+    transform-origin: 50% 100%;
+    overflow: hidden;
+    border-radius: 50%;
+
+    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(2n){
+    height: 40px;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(1){
+    --index:0;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(2){
+    --index:1;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(3){
+    --index:2;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(4){
+    --index:3;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(5){
+    --index:4;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(6){
+    --index:5;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(7){
+    --index:6;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(8){
+    --index:7;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(9){
+    --index:8;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(10){
+    --index:9;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(11){
+    --index:10;
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(12){
+    --index:11;
+}
+
+main > form > label:nth-of-type(3) div div::before{
+    content: "";
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    right: 0;
+
+    height: 100%;
+    background-color:var(--roze);
+}
+
+main > form > label:nth-of-type(3) div div:nth-child(2n)::before{
+    background-color: var(--groen);
+}
+
+main input[type="checkbox"]:nth-of-type(3):checked ~ form > label:nth-of-type(3) div div::before{
+    animation: selected 0.75s;
+}
+
+main input[type="checkbox"]:nth-of-type(2):checked ~ form > label:nth-of-type(2) div div::before{
+    animation: selected 0.75s;
+}
+
+@keyframes selected{
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: -100%;
+    }
+}
+
+/* ------------------ label wavy shooter ------------------------- */
+main input[type="checkbox"]:nth-of-type(4):checked ~ form > label:nth-of-type(4){
+    box-shadow: inset 0 0 10px lightgray;
 }
