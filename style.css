@@ -41,30 +41,31 @@ main section:first-of-type > div:nth-of-type(2){
     z-index: 3;
 }
 
+/* maan mannetje*/
 main section:first-of-type > div:nth-of-type(2) img{
     opacity: 0;
 }
 
 main section:first-of-type > div:nth-of-type(2):hover img{
     position: absolute;
-    bottom:-4vmin; left:7vmin;
-    height: 10vmin;
-    width: 5vmin;
+    bottom:-4vh; left:7vh;
+    height: 10vh;
+    width: 5vh;
     min-height: 25px;
 
     animation: poppetje 9s linear;
     animation-fill-mode: forwards;
 }
 
-
+/* hengel*/
 main section:first-of-type > div:nth-of-type(2):hover div:first-of-type{
     opacity: 0;
     position: absolute;
-    bottom:0vmin; left:4.5vmin;
+    bottom:0vh; left:4.5vh;
     
     z-index: -1;
-    width: 5vmin; height: 10vmin;
-    border-radius: 0 5vmin 0 0;
+    width: 5vh; height: 10vh;
+    border-radius: 0 5vh 0 0;
     transform: rotate(-25deg);
     box-shadow: 3px -3px 0 white;
     background-color: var(--lucht);
@@ -73,18 +74,19 @@ main section:first-of-type > div:nth-of-type(2):hover div:first-of-type{
     animation-fill-mode: forwards;
 }
 
+/* vislijn*/
 main section:first-of-type > div:nth-of-type(2) div:nth-of-type(2){
     background-color: transparent;
     position: absolute;
-    bottom:-91vmin; left:1.9vmin;
-    width: 0.25vmin; height: 100vmin;
+    bottom:-74vh; left:1.9vh;
+    width: 0.25vh; height: 83vh;
 
     overflow: hidden;
 }
 
 main section:first-of-type > div:nth-of-type(2):hover div:nth-of-type(2)::before{
     content: "";
-    width: 100%; height: 82vh;
+    width: 100%; height: 100%;
     position: absolute;
     top: -100%; left: 0;
     background-color: white;
@@ -93,33 +95,39 @@ main section:first-of-type > div:nth-of-type(2):hover div:nth-of-type(2)::before
     animation-delay: 1s;
 }
 
+/* gras */
 main section:first-of-type > div:nth-of-type(3){
     background-color: #5F7C5A;
     width: 100vw;
     height: 5vh;
 }
 
+/* vijfer */
 main section:first-of-type > div:nth-of-type(4){
-    width: 20vmin; height: 3vh;
+    width: 20vw; height: 5vw;
+
+    max-width: 60px; max-height: 30px;
+    min-width: 120px;
     background-color: rgb(8, 44, 99);
     border-radius: 47% 53% 24% 76% / 47% 35% 65% 53%;
 
     position: absolute;
-    bottom: 0.5vmin; right: 15vmax;
+    bottom: 0.5vh; right: 15vw;
 }
 
+/* vis */
 main section:first-of-type > div:nth-of-type(2):hover + div + div div{
     opacity: 0;
     position: absolute;
     bottom: -2em;
     
     left: 48%;
-    height: 3em; width: 1em;
+    height: 50px; width: 20px;
     background-color: rgb(255, 77, 0);
     clip-path: polygon(52% 0%, 25% 13%, 7% 27%, 2% 46%, 9% 58%, 21% 69%, 35% 80%, 3% 100%, 100% 100%, 69% 80%, 82% 71%, 94% 60%, 99% 46%, 93% 26%, 77% 13%);
     z-index: 5;
 
-    animation: visje 4s linear;
+    animation: visje 4.9s linear;
     animation-delay: 4.5s;
     animation-fill-mode: forwards;
 }
@@ -179,7 +187,7 @@ main section:first-of-type > div:nth-of-type(2):hover + div + div div{
     0%{
         opacity: 0;
         bottom: -2em;
-        left: 48%;
+        left: 5vw;
     }
     20%{
         opacity: 1;
@@ -187,17 +195,17 @@ main section:first-of-type > div:nth-of-type(2):hover + div + div div{
     70%{
         bottom: 77vh;
         opacity: 1;
-        left: 48%; 
+        left: 5vw; 
     }
     95%{
-        bottom: 77vh;
+        bottom: 78vh;
         opacity: 1;
         left: 48%; 
     }
     100%{
-        left: 50%;
+        left: 7vw;
         opacity: 0;
-        bottom: 77vh; 
+        bottom: 78vh; 
     }
 }    
 
@@ -217,83 +225,60 @@ main > section:first-of-type ul{
 main > section:first-of-type ul li{
     position: relative;
     width: 13vmin;
-    min-width: 55px;
-    height: 90%;
+    min-width: 75px;
+    height: 100%;
+    min-height: 125px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
-}
-
-main > section:first-of-type ul li:nth-of-type(2n){
-    height: 85%;
 }
 
 /* boom-top */
 main > section:first-of-type ul li div:first-of-type{
-    width: 50%;
-    height: 30%;
+    width: 90%;
+    height: 55%;
     background-color: #536c4f;
     border-radius: 50%;
-
-    position: absolute;
-    top: 6%; left: 0;
-    z-index: 2;
 }
 
-main > section:first-of-type ul li div:nth-of-type(2){
-    width: 50%;
-    height: 30%;
-    background-color: #536c4f;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 4%; left: 45%;
-    z-index: 2;
+/* random stam*/
+main > section:first-of-type ul li:nth-of-type(2n) div:first-of-type{
+    width: 100%;
+    height: 70%;
+    background-color: #3c4d39; 
 }
 
-main > section:first-of-type ul li div:nth-of-type(3){
-    width: 50%;
-    height: 30%;
-    background-color: #536c4f;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 0; left: 17%;
-    z-index: 2;
+main > section:first-of-type ul li:nth-of-type(3n) div:first-of-type{
+    width: 90%;
+    height: 65%; 
+    background-color: #435241;
 }
 
-main > section:first-of-type ul li div:nth-of-type(4){
-    width: 50%;
-    height: 30%;
-    background-color: #536c4f;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 20%; left: 8%;
-    z-index: 2;
-}
-
-main > section:first-of-type ul li div:nth-of-type(5){
-    width: 50%;
-    height: 30%;
-    background-color: #536c4f;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 20%; left: 40%;
-    z-index: 2;
+main > section:first-of-type ul li:nth-of-type(4n) div:first-of-type{
+    background-color: #51553b;
 }
 
 /* boom-stam */
 main > section:first-of-type ul li div:last-of-type{
-    width: 10px;
-    height: 70%;
+    margin-top: -10vh;
+    width: 50px;
+    height: 80%;
     background-color: rgb(109, 89, 65);
 
-    position: absolute;
-    bottom: 0; left: 40%;
+    clip-path: polygon(40% 100%, 41% 66%, 41% 62%, 42% 44%, 11% 32%, 41% 41%, 50% 0, 53% 23%, 78% 12%, 53% 28%, 55% 52%, 79% 38%, 55% 57%, 56% 62%, 60% 100%);
 }
+
+/* random stam*/
+main > section:first-of-type ul li:nth-of-type(2n) div:last-of-type{
+    clip-path: polygon(40% 100%, 60% 100%, 56% 50%, 96% 39%, 54% 46%, 53% 36%, 82% 13%, 51% 32%, 50% 0, 38% 31%, 0 5%, 40% 36%, 38% 52%, 1% 43%, 39% 55%);
+}
+
+main > section:first-of-type ul li:nth-of-type(3n) div:last-of-type{
+    clip-path: polygon(40% 100%, 60% 100%, 56% 38%, 100% 13%, 54% 33%, 50% 0, 46% 19%, 11% 9%, 44% 22%);
+}
+
 
 /*--------------------------------------------- Vuurwerk ------------------------------------------------------*/
 main > input[type="checkbox"]{
@@ -456,8 +441,8 @@ main > section:nth-of-type(2) > div:nth-of-type(3){
         opacity: 1;
     }
     24%{
-        top: 20vh;
-        left: 85vw;
+        top: 17vh;
+        left: 75vw;
         transform: rotate(45deg);
         opacity: 0;
 
@@ -498,7 +483,7 @@ main > section:nth-of-type(2) > div:nth-of-type(3){
     }
     75%{
         top: 100vh; left: 50vw;
-        transform: rotate(-10deg);
+        transform: rotate(-40deg);
         opacity: 0;
     }
     76%{
@@ -509,7 +494,7 @@ main > section:nth-of-type(2) > div:nth-of-type(3){
     }
     99%{
         top: 35vh; left: 15vw;
-        transform: rotate(-40deg);
+        transform: rotate(-60deg);
         opacity: 0;
     }
     100%{
@@ -683,7 +668,7 @@ main > section:nth-of-type(2) > div:nth-of-type(4){
     display: none;
     position:absolute;
     top: 10vh;
-    left: 80vw;
+    left: 70vw;
     width: 170px; height: 170px;
     
     animation: beweeg2 8s infinite;
@@ -788,11 +773,11 @@ main > section:nth-of-type(2) > div:nth-of-type(4) div:nth-child(2n)::before{
 @keyframes beweeg2{
     0%{
         top: 10vh;
-        left: 80vw;
+        left: 70vw;
     }
     24%{
         top: 10vh;
-        left: 80vw; 
+        left: 70vw; 
     }
     
     25%{
