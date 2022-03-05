@@ -24,7 +24,7 @@ main section:first-of-type{
 main section:first-of-type > div:first-of-type{
     background-color: var(--lucht);
     width: 100vw;
-    height: 95vh;
+    height: 92.5vh;
 }
 
 /* maan van: https://medium.com/@ansariabdullahar/how-to-make-a-crescent-moon-using-css-box-shadow-property-463f118c4d83 */
@@ -99,7 +99,7 @@ main section:first-of-type > div:nth-of-type(2):hover div:nth-of-type(2)::before
 main section:first-of-type > div:nth-of-type(3){
     background-color: #5F7C5A;
     width: 100vw;
-    height: 5vh;
+    height: 7.5vh;
 }
 
 /* vijfer */
@@ -207,25 +207,26 @@ main section:first-of-type > div:nth-of-type(2):hover + div + div div{
 /* -------------- bomen --------------*/
 main > section:first-of-type ul{
     position: absolute;
-    bottom: 3vh;
-    width: 100vmax;
-    height: 23vmin;
-    min-height: 90px;
+    bottom: 6vh;
+    width: 100vw;
+    height: 23vh;
+
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow: hidden;
     align-items: flex-end;
 }
 
 main > section:first-of-type ul li{
     position: relative;
-    width: 13vmin;
-    min-width: 75px;
-    height: 100%;
-    min-height: 125px;
+    min-width: 90px;
+    height: 175px;
+    margin: 0 20px;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     list-style-type: none;
 }
@@ -288,7 +289,7 @@ main > section:nth-of-type(2){
     z-index: 2;
 }
 
-/*------------------------------- Vuurwerk aanzetten -----------------------------------------*/
+/*------------------------------- Vuurwerk aanzetten met inputs -----------------------------------------*/
 /* vuurwerk 1 */
 main input[type="checkbox"]:nth-of-type(2):checked ~ section:nth-of-type(2) > div:nth-of-type(1){
     display: block;
