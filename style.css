@@ -119,53 +119,51 @@ main section:first-of-type > div:nth-of-type(4){
 main section:first-of-type > div:nth-of-type(2):hover + div + div div{
     opacity: 0;
     position: absolute;
-    bottom: -2em;
     
-    left: 48%;
     height: 50px; width: 20px;
     background-color: rgb(255, 77, 0);
     clip-path: polygon(52% 0%, 25% 13%, 7% 27%, 2% 46%, 9% 58%, 21% 69%, 35% 80%, 3% 100%, 100% 100%, 69% 80%, 82% 71%, 94% 60%, 99% 46%, 93% 26%, 77% 13%);
     z-index: 5;
 
-    animation: visje 4.9s linear;
+    animation: visje 4.5s linear;
     animation-delay: 4.5s;
     animation-fill-mode: forwards;
 }
 
 @keyframes poppetje{
     0%{
-        left:9.5vmin;
+        left:9.5vh;
         opacity: 0;
     }
     10%{
-        left:8.5vmin;
+        left:8.5vh;
         opacity: 1;
     }
     90%{
-        left:8.5vmin;
+        left:8.5vh;
         opacity: 1;
     }
     100%{
-        left:9.5vmin;
+        left:9.5vh;
         opacity: 0;
     }
 }
 
 @keyframes hengel{
     0%{
-        left:4.5vmin;
+        left:4.5vh;
         opacity: 0;
     }
     10%{
-        left:3.5vmin;
+        left:3.5vh;
         opacity: 1;
     }
     90%{
-        left:3.5vmin;
+        left:3.5vh;
         opacity: 1;
     }   
     100%{
-        left:4.5vmin;
+        left:4.5vh;
         opacity: 0;
     }
 }
@@ -186,26 +184,23 @@ main section:first-of-type > div:nth-of-type(2):hover + div + div div{
 @keyframes visje{
     0%{
         opacity: 0;
-        bottom: -2em;
-        left: 5vw;
+        bottom: -20px;
+        left: calc(50% - 13px);
     }
-    20%{
+    10%{
         opacity: 1;
     }
-    70%{
+    75%{
         bottom: 77vh;
-        opacity: 1;
-        left: 5vw; 
     }
-    95%{
-        bottom: 78vh;
+    85%{
         opacity: 1;
-        left: 48%; 
+        left: calc(50% - 13px);
     }
     100%{
-        left: 7vw;
         opacity: 0;
         bottom: 78vh; 
+        left: 48%;  
     }
 }    
 
