@@ -17,24 +17,25 @@ Ik kon opzich al best wat CSS wat styling betreft. Daarom ben ik de opdracht van
 - CSS voor dark- & lightmodus
 - Custom properties (variabelen)
 
-## Ik ben het meest trots op..
-... dat ik zo veel nieuwe dingen heb ontdekt. Ik vond het ook het leukste om dingen uit te proberen: Dingen die niet werken en na een tijdje ploeteren dan toch wel lukken. Stiekem net zo trots op mijn codepen als op het eindresultaat van deze repo.
+## 💎 Ik ben het meest trots op..
+... dat ik zo veel nieuwe CSS dingen heb ontdekt. Dit vond ik ook het leukste aan het vak: om dingen uit te proberen. Dingen die eerst niet werken en na een tijdje ploeteren dan toch wel lukken voelen altijd lekker. Ik ben dan stiekem ook net zo trots op mijn codepen als op het eindresultaat van deze repo. Ook al is mijn vuurwerkshow meer 'aesthetically pleasing', heb ik meer geleerd van de codepen.
+Maar als ik één ding moet kiezen,
 
 
-## Proces van vuurwerkshow
-### :star: Week 1
+## :seedling: Proces van vuurwerkshow
+### Week 1
 > Codepen: list Item 1 t/m 4
 
 Deze week heb ik de eerste stappen gezet in het maken van vuurwerk. Ik heb op youtube een [tutorial](https://www.youtube.com/watch?v=K4K7HNavK4U) gevonden. Vanuit deze tutorial ben ik verder gaan werken met soort gelijk vuurwerk. Ook heb ik zelf wat nieuwe soorten vuurwerk gemaakt. Ook ben ik begonnen met een achtergrond voor de vuurwerkt show en heb ik boompjes gemaakt met HTML/CSS. 
 
-### :star: Week 2
+### Week 2
 > Codepen: list Item 4 t/m 8
 
 In week 2 heb ik veel grotere stappen gemaakt dan in week 1. Ik had wat verschillende soorten vuurwerk, dus nu moesten er pijlen komen. Ik wilde eigenlijk een soort vuurtje achter mijn pijl aan als in List Item 6, maar ik wilde ook dat de pijl de echte vorm van een vuurpijl was. Ik heb uiteindelijk gekozen voor de vorm. 
 Ook heb ik een wavy object gemaakt met een [tutorial](https://www.youtube.com/watch?v=BaYd9Y_J71o). Bij deze animatie was het even puzzelen met de translate aangezien het er niet infinite uitziet, als je de animatie niet goed zet. Verder ben ik deze week begonnen met stiekem programmeren. Ik heb een form gemaakt die je binnen en buiten het scherm kan zetten. In die form staan nu knoppen waarmee je het vuurwerk aan en uit kan zetten. Ook dit gebeurt met checkboxes. Dit was een lekkere week, omdat ik erg ben opgeschoten!
  
 
-### :star: Week 3
+### Week 3
 > Codepen: List Item 9 t/m 11
 
 De laatste week heb ik nog best veel gedaan. Zo heb ik gewerkt met custom properties omdat het sommige dingen dezelfe kleur moeten hebben. Het is dan veel makkelijker om van die kleur een custom propertie te maken. Dan kun je de kleur overal in het bestand aanroepen. Super handig!
