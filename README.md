@@ -28,6 +28,7 @@ Het enige wat niet meer is gelukt, is de animatie van de maan responsive maken. 
 ## 🆕 Wat was nieuw?
 Ik kon opzich al best wat CSS wat styling betreft. Daarom ben ik de opdracht van de vuurwerkshow gaan doen. Met deze opdracht kon ik meer animatie dingen leren en kon ik het 'stiekem programmeren' ook toepassen. 
 
+### Nieuwe technieken
 - Stiekem programmeren met CSS
   * checkbox als button gebruiken
 - Nieuwe soorten animatie
