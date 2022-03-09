@@ -25,10 +25,98 @@ main section:first-of-type{
     position: relative;
 }
 
+/* lucht */
 main section:first-of-type > div:first-of-type{
     background-color: var(--lucht);
     width: 100vw;
     height: 92.5vh;
+
+    position: relative;
+}
+
+/* sterren */
+main section:first-of-type > div:first-of-type div{
+    width: 2px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+
+    border-radius: 50%;
+    animation: twinkel 2s infinite;
+}
+
+main section:first-of-type > div:first-of-type div:first-of-type{
+    top: 15vh;
+    left: 5vw;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(2){
+    top: 40vh;
+    left: 12vw;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(3){
+    top: 25vh;
+    left: 25vw;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(4){
+    top: 55vh;
+    left: 32vw;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(5){
+    top: 35vh;
+    left: 42vw;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(6){
+    top: 10vh;
+    left: 50vw;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(7){
+    top: 60vh;
+    left: 55vw;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(8){
+    top: 30vh;
+    left: 65vw;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(9){
+    top: 60vh;
+    left: 80vw;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(10){
+    top: 45vh;
+    left: 90vw;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(2n){
+    animation-delay: 0.5s;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(3n){
+    animation-delay: 1s;
+}
+
+main section:first-of-type > div:first-of-type div:nth-of-type(4n){
+    animation-delay: 1.5s;
+}
+
+@keyframes twinkel{
+    0%{
+      box-shawdow: transparent;
+    }
+    50%{
+      box-shadow: 0 0 20px white, 0 0 20px white;
+    }
+    100%{
+      box-shadow: transparent;
+    }
 }
 
 /* maan van: https://medium.com/@ansariabdullahar/how-to-make-a-crescent-moon-using-css-box-shadow-property-463f118c4d83 */
