@@ -4,14 +4,14 @@
     font-family: avenir;
 }
 
+
 :root {
     --lucht: #35314B;
     --grond: #5F7C5A; 
-
     --geel: #ffff00;
     --groen:#1cf476;
     --roze: #ff00d9;
-  }
+}
 
 main{
     width: 100vw;
@@ -108,7 +108,7 @@ main section:first-of-type > div:nth-of-type(3){
 
 /* vijfer */
 main section:first-of-type > div:nth-of-type(4){
-    width: 20vw; height: 5vw;
+    width: 20vw; height: 5vh;
 
     max-width: 60px; max-height: 30px;
     min-width: 120px;
@@ -215,6 +215,7 @@ main > section:first-of-type ul{
     width: 100vw;
     height: 23vh;
     min-height: 140px;
+    max-height: 160px;
 
     display: flex;
     flex-direction: row;
