@@ -35,14 +35,13 @@ Ik kon opzich al best wat CSS wat styling betreft. Daarom ben ik de opdracht van
   * De wavy shooter
   * Animaties linken aan elkaar met animation-delay
 - Figuren maken met CSS
-   * Clippath
+   * Clippath (met [clippy](https://bennettfeely.com/clippy/) )
    * Vormpjes samenvoegen tot één vormpje
 - CSS voor dark- & lightmodus
 - Custom properties (variabelen)
 
 ## 💎 Ik ben het meest trots op..
 ... dat ik zo veel nieuwe CSS dingen heb ontdekt. Dit vond ik ook het leukste aan het vak: om dingen uit te proberen. Dingen die eerst niet werken en na een tijdje ploeteren dan toch wel lukken voelen altijd lekker. Ik ben dan stiekem ook net zo trots op mijn codepen als op het eindresultaat van deze repo. Ook al is mijn vuurwerkshow meer 'aesthetically pleasing', heb ik meer geleerd van de codepen.
-Maar als ik één ding moet kiezen,
 
 
 Ik vond het een heel leuk vak!!
