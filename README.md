@@ -13,16 +13,17 @@ Deze week heb ik de eerste stappen gezet in het maken van vuurwerk. Ik heb op yo
 > Codepen: list Item 4 t/m 8
 
 In week 2 heb ik veel grotere stappen gemaakt dan in week 1. Ik had wat verschillende soorten vuurwerk, dus nu moesten er pijlen komen. Ik wilde eigenlijk een soort vuurtje achter mijn pijl aan als in List Item 6, maar ik wilde ook dat de pijl de echte vorm van een vuurpijl was. Ik heb uiteindelijk gekozen voor de vorm. 
-Ook heb ik een wavy object gemaakt met een [tutorial](https://www.youtube.com/watch?v=BaYd9Y_J71o). Bij deze animatie was het even puzzelen met de translate aangezien het er niet infinite uitziet, als je de animatie niet goed zet. Verder ben ik deze week begonnen met stiekem programmeren. Ik heb een form gemaakt die je binnen en buiten het scherm kan zetten. In die form staan nu knoppen waarmee je het vuurwerk aan en uit kan zetten. Ook dit gebeurt met checkboxes. Dit was een lekkere week, omdat ik erg ben opgeschoten!
+Ook heb ik een wavy object gemaakt met een [tutorial](https://www.youtube.com/watch?v=BaYd9Y_J71o). Bij deze animatie was het even puzzelen met de translate aangezien het er niet infinite uitziet, als je de animatie niet goed zet. Verder ben ik deze week begonnen met stiekem programmeren. Ik heb een form gemaakt die je binnen en buiten het scherm kan zetten. In die form staan nu knoppen waarmee je het vuurwerk aan en uit kan zetten. Ook dit gebeurt met checkboxes. Dit was een lekkere week, omdat ik erg ben opgeschoten! Als laatste heb ik ook een animatie gemaakt op de maan. 
  
 
 ### Week 3
 > Codepen: List Item 9 t/m 11
 
-De laatste week heb ik nog best veel gedaan. Zo heb ik gewerkt met custom properties omdat het sommige dingen dezelfe kleur moeten hebben. Het is dan veel makkelijker om van die kleur een custom propertie te maken. Dan kun je de kleur overal in het bestand aanroepen. Super handig!
+De laatste week heb ik echt veel gedaan. Zo heb ik gewerkt met custom properties omdat het sommige dingen dezelfe kleur moeten hebben. Het is dan veel makkelijker om van die kleur een custom propertie te maken. Dan kun je de kleur overal in het bestand aanroepen. Super handig!
 Ook heb de boompjes aangepast en random'er gemaakt. Het was een list met allemaal dezelfde boompjes en dat was wat saai. Nu zijn de boompjes verschillende groottes en hebben ze verschillende kleuren.
 Om het af te maken heb ik sterren gemaakt in Codepen (List Item 9) en deze heb ik toegevoegd in mijn repo. 
 Ik heb ook nog wat geexperimenteerd met dingen als bepaalde code voor dark/light modus (List Item 10) en the has() (List Item 11)
+Het enige wat niet meer is gelukt, is de animatie van de maan responsive maken. Daar heb ik helaas geen tijd meer voor gehad.
 
 ## 🆕 Wat was nieuw?
 Ik kon opzich al best wat CSS wat styling betreft. Daarom ben ik de opdracht van de vuurwerkshow gaan doen. Met deze opdracht kon ik meer animatie dingen leren en kon ik het 'stiekem programmeren' ook toepassen. 
