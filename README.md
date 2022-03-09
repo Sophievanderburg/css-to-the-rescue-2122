@@ -2,27 +2,8 @@
 Ik heb om te experimenteren een codepen aangemaakt: [https://codepen.io/sophievdburg/pen/JjOyxyq](https://codepen.io/sophievdburg/pen/JjOyxyq) <br>
 Omdat ik bang was mijn hele project te verpesten, heb ik deze codepen aangemaakt. Als ik er klaar mee was, kon ik beslisses of ik het wilde gebruiken of niet. 
 
-## Wat was nieuw?
-Ik kon opzich al best wat CSS wat styling betreft. Daarom ben ik de opdracht van de vuurwerkshow gaan doen. Met deze opdracht kon ik meer animatie dingen leren en kon ik het 'stiekem programmeren' ook toepassen. 
 
-- Stiekem programmeren met CSS
-  * checkbox als button gebruiken
-- Nieuwe soorten animatie
-  * Animeren met ::before 
-  * De wavy shooter
-  * Animaties linken aan elkaar met animation-delay
-- Figuren maken met CSS
-   * Clippath
-   * Vormpjes samenvoegen tot één vormpje
-- CSS voor dark- & lightmodus
-- Custom properties (variabelen)
-
-## 💎 Ik ben het meest trots op..
-... dat ik zo veel nieuwe CSS dingen heb ontdekt. Dit vond ik ook het leukste aan het vak: om dingen uit te proberen. Dingen die eerst niet werken en na een tijdje ploeteren dan toch wel lukken voelen altijd lekker. Ik ben dan stiekem ook net zo trots op mijn codepen als op het eindresultaat van deze repo. Ook al is mijn vuurwerkshow meer 'aesthetically pleasing', heb ik meer geleerd van de codepen.
-Maar als ik één ding moet kiezen,
-
-
-## :seedling: Proces van vuurwerkshow
+## :seedling: Proces
 ### Week 1
 > Codepen: list Item 1 t/m 4
 
@@ -42,6 +23,25 @@ De laatste week heb ik nog best veel gedaan. Zo heb ik gewerkt met custom proper
 Ook heb de boompjes aangepast en random'er gemaakt. Het was een list met allemaal dezelfde boompjes en dat was wat saai. Nu zijn de boompjes verschillende groottes en hebben ze verschillende kleuren.
 Om het af te maken heb ik sterren gemaakt in Codepen (List Item 9) en deze heb ik toegevoegd in mijn repo. 
 Ik heb ook nog wat geexperimenteerd met dingen als bepaalde code voor dark/light modus (List Item 10) en the has() (List Item 11)
+
+## 🆕 Wat was nieuw?
+Ik kon opzich al best wat CSS wat styling betreft. Daarom ben ik de opdracht van de vuurwerkshow gaan doen. Met deze opdracht kon ik meer animatie dingen leren en kon ik het 'stiekem programmeren' ook toepassen. 
+
+- Stiekem programmeren met CSS
+  * checkbox als button gebruiken
+- Nieuwe soorten animatie
+  * Animeren met ::before 
+  * De wavy shooter
+  * Animaties linken aan elkaar met animation-delay
+- Figuren maken met CSS
+   * Clippath
+   * Vormpjes samenvoegen tot één vormpje
+- CSS voor dark- & lightmodus
+- Custom properties (variabelen)
+
+## 💎 Ik ben het meest trots op..
+... dat ik zo veel nieuwe CSS dingen heb ontdekt. Dit vond ik ook het leukste aan het vak: om dingen uit te proberen. Dingen die eerst niet werken en na een tijdje ploeteren dan toch wel lukken voelen altijd lekker. Ik ben dan stiekem ook net zo trots op mijn codepen als op het eindresultaat van deze repo. Ook al is mijn vuurwerkshow meer 'aesthetically pleasing', heb ik meer geleerd van de codepen.
+Maar als ik één ding moet kiezen,
 
 
 Ik vond het een heel leuk vak!!
